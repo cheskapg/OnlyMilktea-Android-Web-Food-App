@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainMenu">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="-98dp"
+        tools:layout_editor_absoluteY="-218dp">
+
+        <ImageView
+            android:contentDescription="onlymilkteaLogoMain"
+            android:id="@+id/imageView3"
+            android:layout_width="320dp"
+            android:layout_height="102dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="103dp"
+            android:layout_marginEnd="35dp"
+            android:layout_marginRight="35dp"
+            app:srcCompat="@drawable/only_milktea" />
+
+        <com.ornach.nobobutton.NoboButton
+            android:id="@+id/NoboButton_MenuCreateOrder"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/imageView3"
+            android:layout_alignBottom="@+id/imageView3"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="94dp"
+            android:layout_marginLeft="94dp"
+            android:layout_marginTop="46dp"
+            android:layout_marginEnd="71dp"
+            android:layout_marginRight="71dp"
+            android:layout_marginBottom="-112dp"
+            android:padding="10dp"
+            android:visibility="visible"
+            app:nb_backgroundColor="#00AEF0"
+            app:nb_borderColor="#FFFFFF"
+            app:nb_borderWidth="2dp"
+            app:nb_focusColor="#FFFFFF"
+            app:nb_fontIcon="&#xf7a0;"
+            app:nb_radius="30dp"
+            app:nb_text="Create an Order"
+            app:nb_textColor="#FFF">
+
+        </com.ornach.nobobutton.NoboButton>
+
+        <com.ornach.nobobutton.NoboButton
+            android:id="@+id/NoboButton_OrdersMade"
+            android:layout_width="246dp"
+            android:layout_height="66dp"
+            android:layout_below="@+id/imageView3"
+            android:layout_alignBottom="@+id/imageView3"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="95dp"
+            android:layout_marginLeft="95dp"
+            android:layout_marginTop="130dp"
+            android:layout_marginEnd="70dp"
+            android:layout_marginRight="70dp"
+            android:layout_marginBottom="-196dp"
+            android:padding="10dp"
+            android:visibility="visible"
+            app:nb_backgroundColor="#00AEF0"
+            app:nb_borderColor="#FFFFFF"
+            app:nb_borderWidth="2dp"
+            app:nb_focusColor="#FFFFFF"
+            app:nb_fontIcon="&#xf291;"
+            app:nb_radius="30dp"
+            app:nb_text="Orders Made"
+            app:nb_textColor="#FFF">
+
+        </com.ornach.nobobutton.NoboButton>
+
+        <com.ornach.nobobutton.NoboButton
+            android:id="@+id/NoboButton_About"
+            android:layout_width="153dp"
+            android:layout_height="52dp"
+            android:layout_below="@+id/imageView3"
+            android:layout_alignBottom="@+id/imageView3"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="144dp"
+            android:layout_marginLeft="144dp"
+            android:layout_marginTop="216dp"
+            android:layout_marginEnd="113dp"
+            android:layout_marginRight="113dp"
+            android:layout_marginBottom="-267dp"
+            android:padding="10dp"
+            android:visibility="visible"
+            app:nb_backgroundColor="#00AEF0"
+            app:nb_borderColor="#FFFFFF"
+            app:nb_borderWidth="2dp"
+            app:nb_focusColor="#FFFFFF"
+            app:nb_fontIcon="&#xf129;"
+            app:nb_radius="30dp"
+            app:nb_text="About"
+            app:nb_textColor="#FFF">
+
+        </com.ornach.nobobutton.NoboButton>
+
+        <com.ornach.nobobutton.NoboButton
+            android:id="@+id/NoboButton_CustomerDetails"
+            android:layout_width="201dp"
+            android:layout_height="39dp"
+            android:layout_below="@+id/imageView3"
+            android:layout_marginStart="120dp"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="314dp"
+            android:layout_marginBottom="201dp"
+            android:padding="5dp"
+            android:visibility="invisible"
+            app:nb_backgroundColor="#00AEF0"
+            app:nb_borderColor="#FFFFFF"
+            app:nb_borderWidth="2dp"
+            app:nb_focusColor="#FFFFFF"
+            app:nb_fontIcon="&#xf291;"
+            app:nb_radius="30dp"
+            app:nb_text="Delivery Info"
+            app:nb_textColor="#FFF">
+
+        </com.ornach.nobobutton.NoboButton>
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

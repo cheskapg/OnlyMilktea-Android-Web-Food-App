@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CustomerDetails"
+
+
+    android:scrollbars="vertical"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="205dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/only_milktea" />
+
+
+    <TextView
+        android:id="@+id/txtDeliveryAddress"
+        android:layout_width="177dp"
+        android:layout_height="37dp"
+        android:layout_marginLeft="13dp"
+        android:layout_below="@+id/imageView"
+        android:layout_marginTop="5dp"
+        android:gravity="center_horizontal"
+        android:text="Delivery address"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="20dp"
+        tools:layout_editor_absoluteY="439dp" />
+    </RelativeLayout>
+    <ScrollView
+        android:layout_marginTop="100dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/txtFirstName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="19dp"
+                android:layout_marginTop="30dp"
+                android:text="First Name"
+                android:textColor="#000000"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etFirstName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtFirstName"
+                android:layout_marginLeft="18dp"
+                android:ems="10"
+                android:hint="input FirstName"
+                android:inputType="textPersonName"
+                android:minHeight="48dp"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/txtLastName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="120dp"
+
+                android:layout_marginTop="30dp"
+                android:layout_toRightOf="@+id/txtFirstName"
+                android:text="Last Name"
+                android:textColor="#000000"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etLastName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtLastName"
+                android:layout_marginLeft="200dp"
+                android:ems="10"
+                android:hint="input LastName"
+                android:inputType="textPersonName"
+                android:minHeight="48dp"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/txtStreetAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/etFirstName"
+                android:layout_marginLeft="19dp"
+                android:layout_marginTop="12dp"
+                android:text="Street Address"
+                android:textColor="#000000"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etStreetAddress"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtStreetAddress"
+                android:layout_marginLeft="19dp"
+                android:ems="10"
+                android:hint="input StreetAddress"
+                android:inputType="textPersonName"
+                android:minHeight="48dp"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/txtBaranggay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/etStreetAddress"
+                android:layout_marginLeft="19dp"
+                android:layout_marginTop="10dp"
+                android:text="Baranggay"
+                android:textColor="#000000"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/spnrBaranggay"
+                android:layout_width="375dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtBaranggay"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                android:entries="@array/BaranggayList"
+                android:minHeight="48dp"
+
+
+                android:prompt="@string/SelectBaranggay" />
+
+            <TextView
+                android:id="@+id/txtContactNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/spnrBaranggay"
+                android:layout_marginLeft="19dp"
+                android:layout_marginTop="10dp"
+                android:text="Contact Number"
+                android:textColor="#000000"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etContactNumber"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtContactNo"
+                android:layout_marginLeft="19dp"
+                android:ems="10"
+                android:hint="input Contact Number"
+                android:inputType="numberSigned"
+                android:minHeight="48dp"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/txtPayment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/etContactNumber"
+                android:layout_marginLeft="19dp"
+                android:layout_marginTop="10dp"
+                android:text="Payment Method"
+                android:textColor="#000000"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/spnrPayment"
+                android:layout_width="375dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtPayment"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:entries="@array/PaymentList"
+                android:minHeight="48dp"
+                android:prompt="@string/SelectPayment" />
+
+            <EditText
+                android:id="@+id/etPaymentCCGC"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/spnrPayment"
+                android:layout_marginLeft="19dp"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:hint="Enter Account No."
+                android:inputType="numberSigned"
+                android:minHeight="48dp"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                android:visibility="invisible" />
+
+
+            <com.ornach.nobobutton.NoboButton
+                android:id="@+id/NoboButton_AddressOK"
+                android:layout_width="145dp"
+                android:layout_height="59dp"
+                android:layout_below="@+id/spnrPayment"
+
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="218dp"
+                android:layout_marginLeft="218dp"
+                android:layout_marginTop="55dp"
+                android:layout_marginEnd="47dp"
+                android:layout_marginRight="47dp"
+                android:layout_marginBottom="-196dp"
+                android:padding="10dp"
+                android:visibility="visible"
+                app:nb_backgroundColor="#00AEF0"
+                app:nb_borderColor="#FFFFFF"
+                app:nb_borderWidth="2dp"
+                app:nb_focusColor="#FFFFFF"
+                app:nb_fontIcon="&#xf00c;"
+                app:nb_radius="30dp"
+                app:nb_text="OK"
+                app:nb_textColor="#FFF"></com.ornach.nobobutton.NoboButton>
+
+            <com.ornach.nobobutton.NoboButton
+                android:id="@+id/NoboButton_AddressCancel"
+                android:layout_width="145dp"
+                android:layout_height="59dp"
+                android:layout_below="@+id/spnrPayment"
+
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="55dp"
+                android:layout_marginEnd="235dp"
+                android:layout_marginRight="235dp"
+                android:layout_marginBottom="-196dp"
+                android:padding="10dp"
+                android:visibility="visible"
+                app:nb_backgroundColor="#00AEF0"
+                app:nb_borderColor="#FFFFFF"
+                app:nb_borderWidth="2dp"
+                app:nb_focusColor="#FFFFFF"
+                app:nb_fontIcon="&#xf060;"
+                app:nb_radius="30dp"
+                app:nb_text="Cancel"
+                app:nb_textColor="#FFF"></com.ornach.nobobutton.NoboButton>
+            //do not del layout fix only
+
+            <TextView
+                android:id="@+id/txtSAMPLE"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/etPaymentCCGC"
+                android:layout_marginLeft="19dp"
+                android:layout_marginTop="100dp"
+                android:textColor="#000000"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:visibility="invisible" />
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
